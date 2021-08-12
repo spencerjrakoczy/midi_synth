@@ -5,7 +5,7 @@ import pygame.midi
 
 #pygame.midi.init()
 notes = [(261, "C"), (277, "C#", "Db"), (293, "D"), (311, "D#", "Eb"), (329, "E"), (349, "F"), (369, "F#", "Gb"), (392, "G"), (415, "G#", "Ab"), (440, "A"), (466, "A#", "Bb"), (493, "B")]
-active_notes = [0 for i in range(0,107)]   #velocity of 0 indicates not is not active. Can set and unset in constant time
+active_notes = [0 for i in range(0,121)]   #velocity of 0 indicates not is not active. Can set and unset in constant time
 
 def freq_from_midi(midi_note_val): 
     octave = midi_note_val//12 #octave numberings start at 1
